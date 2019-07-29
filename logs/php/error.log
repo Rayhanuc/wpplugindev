@@ -5,3 +5,25 @@
 [28-Jul-2019 19:12:28 UTC] PHP Warning:  Error while sending QUERY packet. PID=18018 in /app/public/wp-includes/wp-db.php on line 2007
 [28-Jul-2019 19:12:29 UTC] WordPress database error Server shutdown in progress for query SELECT option_value FROM wp_options WHERE option_name = 'WPLANG' LIMIT 1 made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, wordcount_load_textdomain, load_plugin_textdomain, determine_locale, get_locale, get_option
 [28-Jul-2019 19:12:31 UTC] PHP Warning:  Error while sending QUERY packet. PID=18001 in /app/public/wp-includes/wp-db.php on line 2007
+[29-Jul-2019 17:52:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in /app/public/wp-content/plugins/word-count/word-count.php on line 45 and exactly 2 expected in /app/public/wp-includes/plugin.php:178
+Stack trace:
+#0 /app/public/wp-content/plugins/word-count/word-count.php(45): apply_filters('wordcount_displ...')
+#1 /app/public/wp-includes/class-wp-hook.php(286): wordcount_reading_time('\n<p> Vestibulum...')
+#2 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('\n<p> Vestibulum...', Array)
+#3 /app/public/wp-includes/post-template.php(247): apply_filters('the_content', '<!-- wp:paragra...')
+#4 /app/public/wp-content/themes/twentyseventeen/template-parts/post/content.php(58): the_content('Continue readin...')
+#5 /app/public/wp-includes/template.php(724): require('/app/public/wp-...')
+#6 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#7 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#8 /app/public/wp- in /app/public/wp-includes/plugin.php on line 178
+[29-Jul-2019 17:53:09 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function apply_filters(), 1 passed in /app/public/wp-content/plugins/word-count/word-count.php on line 45 and exactly 2 expected in /app/public/wp-includes/plugin.php:178
+Stack trace:
+#0 /app/public/wp-content/plugins/word-count/word-count.php(45): apply_filters('wordcount_displ...')
+#1 /app/public/wp-includes/class-wp-hook.php(286): wordcount_reading_time('\n<p> Vestibulum...')
+#2 /app/public/wp-includes/plugin.php(208): WP_Hook->apply_filters('\n<p> Vestibulum...', Array)
+#3 /app/public/wp-includes/post-template.php(247): apply_filters('the_content', '<!-- wp:paragra...')
+#4 /app/public/wp-content/themes/twentyseventeen/template-parts/post/content.php(58): the_content('Continue readin...')
+#5 /app/public/wp-includes/template.php(724): require('/app/public/wp-...')
+#6 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#7 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#8 /app/public/wp- in /app/public/wp-includes/plugin.php on line 178

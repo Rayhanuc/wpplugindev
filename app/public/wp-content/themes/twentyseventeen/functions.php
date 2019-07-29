@@ -677,3 +677,9 @@ function philosophy_wordcount_tag($tag){
     return "p";
 }
 add_filter('wordcount_tag','philosophy_wordcount_tag');
+
+
+function philosophy_readingtime_tag(){
+    return 'h5';
+}
+add_filter('wordcount_readingtime_tag','philosophy_readingtime_tag');
