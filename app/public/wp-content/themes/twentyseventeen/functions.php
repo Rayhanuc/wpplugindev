@@ -662,3 +662,18 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+// wordcount plugin test
+function philosophy_wordcount_heading($heading){
+    // same as default plugin label
+    $heading = strtoupper($heading);
+    // $heading = strtoupper('Total Words');
+    // $heading = __('Total Words','philosophy');
+    return $heading;
+}
+add_filter('wordcount_heading','philosophy_wordcount_heading');
+
+function philosophy_wordcount_tag($tag){
+    return "p";
+}
+add_filter('wordcount_tag','philosophy_wordcount_tag');
