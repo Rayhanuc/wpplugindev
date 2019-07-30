@@ -664,22 +664,40 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
 // wordcount plugin test
-function philosophy_wordcount_heading($heading){
+function twentyseventeen_wordcount_heading($heading){
     // same as default plugin label
     $heading = strtoupper($heading);
     // $heading = strtoupper('Total Words');
-    // $heading = __('Total Words','philosophy');
+    // $heading = __('Total Words','twentyseventeen');
     return $heading;
 }
-add_filter('wordcount_heading','philosophy_wordcount_heading');
+add_filter('wordcount_heading','twentyseventeen_wordcount_heading');
 
-function philosophy_wordcount_tag($tag){
+function twentyseventeen_wordcount_tag($tag){
     return "p";
 }
-add_filter('wordcount_tag','philosophy_wordcount_tag');
+add_filter('wordcount_tag','twentyseventeen_wordcount_tag');
 
-
-function philosophy_readingtime_tag(){
+function twentyseventeen_readingtime_tag(){
     return 'h5';
 }
-add_filter('wordcount_readingtime_tag','philosophy_readingtime_tag');
+add_filter('wordcount_readingtime_tag','twentyseventeen_readingtime_tag');
+
+
+
+function twentyseventeen_exclude_qucode_post_types($post_types){
+    // Method 1
+    // array_push($post_types,'page');
+    
+    // Method 2
+    $post_types[] = 'page';
+    return $post_types;
+
+}
+add_filter('pqrc_excluded_post_types','twentyseventeen_exclude_qucode_post_types');
+
+// QR code dimension
+function twentyseventeen_qrcode_dimension($dimension){
+    return '100x100';
+}
+add_filter('pqrc_qrcode_dimension','twentyseventeen_qrcode_dimension');
