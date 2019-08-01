@@ -32,27 +32,12 @@
                     <ul>
                         <li><a href="class-1/class-1.php" target="_black"><?php echo "Class: 1.1" ?></a></li>
                         <li><a href="class-2/class-2.php" target="_black"><?php echo "Class: 1.2" ?></a></li>
-                        <li><a href="php-1.3.php" target="_black"><?php echo "Class: php-1.3" ?></a></li>
-                        <li><a href="php-1.4.php" target="_black"><?php echo "Class: php-1.4" ?></a></li>
-                        <li><a href="php-1.5.php" target="_black"><?php echo "Class: php-1.5" ?></a></li>
-                        <li><a href="php-1.6.php" target="_black"><?php echo "Class: php-1.6" ?></a></li>
-                        <li><a href="php-1.7.php" target="_black"><?php echo "Class: php-1.7" ?></a></li>
-                        <li><a href="php-1.8.php" target="_black"><?php echo "Class: php-1.8" ?></a></li>
-                        <li><a href="php-1.9.php" target="_black"><?php echo "Class: php-1.9" ?></a></li>
-                        <li><a href="php-1.10.php" target="_black"><?php echo "Class: php-1.10" ?></a></li>
-                        <li><a href="php-1.11.php" target="_black"><?php echo "Class: php-1.11" ?></a></li>
-                        <li><a href="php-1.12.php" target="_black"><?php echo "Class: php-1.12" ?></a></li>
-                        <li><a href="php-1.13.php" target="_black"><?php echo "Class: php-1.13" ?></a></li>
-                        <li><a href="php-1.14.php" target="_black"><?php echo "Class: php-1.14" ?></a></li>
-                        <li><a href="php-1.15.php" target="_black"><?php echo "Class: php-1.15" ?></a></li>
+                        <li><a href="class-3/class-3.php" target="_black"><?php echo "Class: 1.3" ?></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 
 
 	<!-- jquery js link -->
