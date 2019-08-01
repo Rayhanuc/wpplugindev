@@ -30,8 +30,8 @@
             <div class="col-md-12">
                 <div class="header-menu">
                     <ul>
-                        <li><a href="class-1/class-1.php" target="_black"><?php echo "Class: 1" ?></a></li>
-                        <li><a href="php-1.2.php" target="_black"><?php echo "Class: php-1.2" ?></a></li>
+                        <li><a href="class-1/class-1.php" target="_black"><?php echo "Class: 1.1" ?></a></li>
+                        <li><a href="class-2/class-2.php" target="_black"><?php echo "Class: 1.2" ?></a></li>
                         <li><a href="php-1.3.php" target="_black"><?php echo "Class: php-1.3" ?></a></li>
                         <li><a href="php-1.4.php" target="_black"><?php echo "Class: php-1.4" ?></a></li>
                         <li><a href="php-1.5.php" target="_black"><?php echo "Class: php-1.5" ?></a></li>
