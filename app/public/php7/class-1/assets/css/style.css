@@ -26,7 +26,8 @@ h6 {
     font-weight: 700;
 }
 body {
-
+    background: #291628;
+    color: #fff;
 }
 a:hover { text-decoration: none }
 

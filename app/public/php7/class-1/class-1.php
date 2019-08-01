@@ -26,14 +26,13 @@
                     <div class="col-md-12">
                         <?php
                         echo "<h1>Online PHP-7 Script Execution</h1> \n<br/>";
-                        ?>
-                        <?php
-                        phpinfo();
+                        echo "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ut maxime explicabo dolore, reiciendis consectetur? Architecto deserunt vel consequatur rerum.</p>";
                         ?>
                     </div>
                 </div>
             </div>
         </div>
+        
 
         <!-- jquery js link -->
         <script src="assets/js/jquery.min.js"></script>
