@@ -59,6 +59,11 @@
 			)
 		);
 
+		// acf demo field show
+		the_field('heading');
+		echo '<br/>';
+		echo wp_get_attachment_image_src( get_field('image'),'large' )[0];
+
 		wp_link_pages(
 			array(
 				'before'      => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),

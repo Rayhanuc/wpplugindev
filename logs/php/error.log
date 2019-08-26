@@ -31,3 +31,17 @@ Stack trace:
 [31-Jul-2019 06:09:46 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
 [31-Jul-2019 06:09:46 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
 [01-Aug-2019 10:28:22 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /app/public/php7/class-2/class-2.php on line 44
+[26-Aug-2019 13:38:05 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[26-Aug-2019 13:38:08 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[26-Aug-2019 13:38:10 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[26-Aug-2019 14:10:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_field() in /app/public/wp-content/themes/twentyseventeen/template-parts/post/content.php:64
+Stack trace:
+#0 /app/public/wp-includes/template.php(724): require()
+#1 /app/public/wp-includes/template.php(671): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/twentyseventeen/single.php(24): get_template_part('template-parts/...', '')
+#4 /app/public/wp-includes/template-loader.php(78): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/twentyseventeen/template-parts/post/content.php on line 64
