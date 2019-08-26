@@ -61,4 +61,4 @@ function acfd_tgm_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 
-// add_filter('acf/settings/show_admin', '__return_false');
+add_filter('acf/settings/show_admin', '__return_false');
