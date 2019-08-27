@@ -1,95 +1,60 @@
 <?php 
 
 
-function acfd_metabox_init(){
-	if( function_exists('acf_add_local_field_group') ):
+function csdemo_simple_metabox($metaboxes){
 
-acf_add_local_field_group(array(
-	'key' => 'group_5d636ecde15f3',
-	'title' => 'Demo Metabox',
-	'fields' => array(
-		array(
-			'key' => 'field_5d63719e52dd0',
-			'label' => 'Heading',
-			'name' => 'heading',
-			'type' => 'text',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
-		),
-		array(
-			'key' => 'field_5d6375b83f75e',
-			'label' => 'Image',
-			'name' => 'image',
-			'type' => 'image',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'return_format' => 'id',
-			'preview_size' => 'medium',
-			'library' => 'all',
-			'min_width' => '',
-			'min_height' => '',
-			'min_size' => '',
-			'max_width' => '',
-			'max_height' => '',
-			'max_size' => '',
-			'mime_types' => '',
-		),
-		array(
-			'key' => 'field_5d638ee041d99',
-			'label' => 'Options',
-			'name' => 'options',
-			'type' => 'true_false',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'message' => '',
-			'default_value' => 0,
-			'ui' => 1,
-			'ui_on_text' => '',
-			'ui_off_text' => '',
-		),
-	),
-	'location' => array(
-		array(
+	$metaboxes[] = array(
+		'id' => 'csdemo-book-info',
+		'title' => __('Book Info','codestar-demo'),
+		'post_type' => array('page','book'),
+		'context' => 'normal',
+		'priority' => 'default',
+		'sections' => array(
 			array(
-				'param' => 'post_type',
-				'operator' => '==',
-				'value' => 'post',
+				'name' => 'csdemo-bookinfo-section',
+				'icon' => 'fa fa-image',
+				'fields' => array(
+					array(
+						'id' => 'author',
+						'title' => __('Book Author','codestar-demo'),
+						'type' => 'text',
+					),
+					array(
+						'id' => 'year',
+						'title' => __('Book Year','codestar-demo'),
+						'type' => 'text',
+					),
+					array(
+						'id' => 'isbn',
+						'title' => __('ISBN','codestar-demo'),
+						'type' => 'text',
+					),
+				)
 			),
-		),
-	),
-	'menu_order' => 0,
-	'position' => 'normal',
-	'style' => 'default',
-	'label_placement' => 'left',
-	'instruction_placement' => 'label',
-	'hide_on_screen' => '',
-	'active' => true,
-	'description' => '',
-));
+			array(
+				'name' => 'csdemo-bookinfo-section2',
+				'icon' => 'fa fa-image',
+				'fields' => array(
+					array(
+						'id' => 'author2',
+						'title' => __('Book Author2','codestar-demo'),
+						'type' => 'text',
+					),
+					array(
+						'id' => 'year2',
+						'title' => __('Book Year2','codestar-demo'),
+						'type' => 'text',
+					),
+					array(
+						'id' => 'isbn2',
+						'title' => __('ISBN2','codestar-demo'),
+						'type' => 'text',
+					),
+				)
+			),
+		)
+	);
 
-endif;
+	return $metaboxes;
 }
-add_action('init','acfd_metabox_init');
+add_filter( 'cs_metabox_options', 'csdemo_simple_metabox' );
