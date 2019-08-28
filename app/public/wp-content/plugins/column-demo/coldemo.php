@@ -44,6 +44,7 @@ function coldemo_post_columns($columns){
 
 	// New Column add
 	$columns['id']= __('Post ID','column-demo');
+	$columns['thumbnail']= __('Thumbnail','column-demo');
 
 	return $columns;
 }
@@ -52,6 +53,11 @@ add_filter('manage_posts_columns','coldemo_post_columns');
 
 // Do Columns Data populate
 function coldemo_post_column_data($column, $post_id){
-	echo $post_id;
+	if ('id'==$column) {
+		echo $post_id;
+	}elseif ('thumbnail'==$column) {
+		$thumbnail = get_the_post_thumbnail( $post_id, array(80,80) );
+		echo $thumbnail;
+	}
 }
 add_action('manage_posts_custom_column','coldemo_post_column_data',10,2);
