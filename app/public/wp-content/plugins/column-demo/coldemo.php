@@ -49,6 +49,7 @@ function coldemo_post_columns($columns){
 	return $columns;
 }
 add_filter('manage_posts_columns','coldemo_post_columns');
+add_filter('manage_pages_columns','coldemo_post_columns');
 
 
 // Do Columns Data populate
@@ -61,3 +62,4 @@ function coldemo_post_column_data($column, $post_id){
 	}
 }
 add_action('manage_posts_custom_column','coldemo_post_column_data',10,2);
+add_action('manage_pages_custom_column','coldemo_post_column_data',10,2);

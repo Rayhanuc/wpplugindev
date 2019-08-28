@@ -42,3 +42,4 @@
 [27-Aug-2019 12:32:00] NOTICE: exiting, bye-bye!
 [28-Aug-2019 04:30:12] NOTICE: fpm is running, pid 91
 [28-Aug-2019 04:30:12] NOTICE: ready to handle connections
+[28-Aug-2019 06:59:29] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
