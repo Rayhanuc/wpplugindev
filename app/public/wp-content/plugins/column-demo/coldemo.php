@@ -117,3 +117,47 @@ function coldemo_update_wordcount_on_post_save($post_id){
 	update_post_meta($p->ID,'wordn',$wordn);
 }
 add_action('save_post','coldemo_update_wordcount_on_post_save');
+
+function coldemo_filter(){
+	if (isset($_GET['post_type']) && $_GET['post_type'] != 'post') { /*Display only on post page*/
+		return;
+	}
+
+	$filter_value = isset($_GET['DEMOFILTER']) ? $_GET['DEMOFILTER'] : '';
+
+	$values = array(
+		'0' => __('Select Status','column-demo'),
+		'1' => __('Some Posts','column-demo'),
+		'2' => __('Some Posts++','column-demo'),
+	);
+
+	?>
+	<select name="DEMOFILTER">
+		<?php
+		foreach ($values as $key => $value) {
+			printf("<option value='%s' %s>%s</option>",$key,
+			$key==$filter_value?"selected = 'selected'":'',
+			$value
+			);
+		}
+		?>
+
+
+	</select>
+	<?php
+}
+add_action('restrict_manage_posts','coldemo_filter');
+
+function coldemo_filter_data($wpquery) {
+	if (! is_admin()) {
+		return;
+	}
+
+	$filter_value = isset($_GET['DEMOFILTER']) ? $_GET['DEMOFILTER'] : '';
+	if ('1' == $filter_value) {
+		$wpquery->set('post__in',array(129,135,139));
+	}else if ('2' == $filter_value) {
+		$wpquery->set('post__in',array(125,133,5));
+	}
+}
+add_action('pre_get_posts','coldemo_filter_data');

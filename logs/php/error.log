@@ -63,3 +63,18 @@ Stack trace:
 [29-Aug-2019 06:54:58 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/plugins/column-demo/coldemo.php on line 79
 [29-Aug-2019 06:54:58 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/plugins/column-demo/coldemo.php on line 79
 [29-Aug-2019 06:54:58 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/plugins/column-demo/coldemo.php on line 79
+[29-Aug-2019 18:16:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in /app/public/wp-content/plugins/column-demo/coldemo.php:143
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): coldemo_filter_data(Object(WP_Query))
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(531): WP_Hook->do_action(Array)
+#3 /app/public/wp-includes/class-wp-query.php(1753): do_action_ref_array('pre_get_posts', Array)
+#4 /app/public/wp-includes/class-wp-query.php(3404): WP_Query->get_posts()
+#5 /app/public/wp-includes/class-wp.php(622): WP_Query->query(Array)
+#6 /app/public/wp-includes/class-wp.php(739): WP->query_posts()
+#7 /app/public/wp-includes/functions.php(1105): WP->main(Array)
+#8 /app/public/wp-admin/includes/post.php(1182): wp(Array)
+#9 /app/public/wp-admin/includes/class-wp-posts-list-table.php(146): wp_edit_posts_query()
+#10 /app/public/wp-admin/edit.php(198): WP_Posts_List_Table->prepare_items()
+#11 {main}
+  thrown in /app/public/wp-content/plugins/column-demo/coldemo.php on line 143
