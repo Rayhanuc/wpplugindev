@@ -701,3 +701,10 @@ function twentyseventeen_qrcode_dimension($dimension){
     return '100x100';
 }
 add_filter('pqrc_qrcode_dimension','twentyseventeen_qrcode_dimension');
+
+
+// Create a Custom Stylesheet for the Login Page
+function custom_login_stylesheet() {
+    wp_enqueue_style('custom-login', get_stylesheet_directory_uri() . '/login/login-styles.css');
+}
+add_action('login_enqueue_scripts', 'custom_login_stylesheet');

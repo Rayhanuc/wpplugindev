@@ -218,7 +218,7 @@ function coldemo_thumbnail_filter_data($wpquery) {
 add_action('pre_get_posts','coldemo_thumbnail_filter_data');
 
 
-// May be word Filter
+// Word Count Filter
 function coldemo_wc_filter(){
 	if (isset($_GET['post_type']) && $_GET['post_type'] != 'post') { /*Display only on post page*/
 		return;

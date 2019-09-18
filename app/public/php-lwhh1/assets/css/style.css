@@ -1,0 +1,66 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+.heading {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #84a2c1;
+    color: #fff;
+}
+
+.heading h1 {
+    padding: 50px 0;
+}
+
+
+.header-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-menu li{
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    padding: 20px;
+    color: #222;
+}
+
+.header-menu li a:hover {
+    color: #da2fc5;
+}
