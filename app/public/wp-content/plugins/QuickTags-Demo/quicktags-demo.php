@@ -22,7 +22,8 @@ add_action("plugins_loaded","posts_to_qucode_load_textdomain");*/
 
 function qtsd_assets($screen){
 	if ('post.php'==$screen) {
-		wp_enqueue_script( 'qtsd-main-js', plugin_dir_url(__FILE__)."/assets/js/qt.js",array('quicktags'));
+		wp_enqueue_script( 'qtsd-main-js', plugin_dir_url(__FILE__)."/assets/js/qt.js",array('quicktags','thickbox'));
+		wp_localize_script( 'qtsd-main-js', 'qtsd', array('preview'=>plugin_dir_url(__FILE__)."/assets/fap.php") );
 	}
 }
 add_action('admin_enqueue_scripts','qtsd_assets');
