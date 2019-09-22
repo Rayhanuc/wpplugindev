@@ -185,3 +185,19 @@ Stack trace:
 [21-Sep-2019 08:02:20 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
 [21-Sep-2019 15:46:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
 [21-Sep-2019 15:46:32 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[22-Sep-2019 09:45:52 UTC] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /app/public/wp-content/plugins/BanglaPhonetic/banglaphonetic.php on line 18
+[22-Sep-2019 09:46:39 UTC] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /app/public/wp-content/plugins/BanglaPhonetic/banglaphonetic.php on line 18
+[22-Sep-2019 09:46:47 UTC] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /app/public/wp-content/plugins/BanglaPhonetic/banglaphonetic.php on line 18
+[22-Sep-2019 10:00:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function arry() in /app/public/wp-content/plugins/BanglaPhonetic/banglaphonetic.php:24
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): bnph_admin_assets('post.php')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/admin-header.php(104): do_action('admin_enqueue_s...', 'post.php')
+#4 /app/public/wp-admin/edit-form-advanced.php(393): require_once('/app/public/wp-...')
+#5 /app/public/wp-admin/post.php(197): include('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-content/plugins/BanglaPhonetic/banglaphonetic.php on line 24
+[22-Sep-2019 13:38:38 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[22-Sep-2019 13:38:39 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[22-Sep-2019 13:38:39 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
