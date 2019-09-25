@@ -26,5 +26,29 @@
 				editor.insertContent("Outdent");
 			}
 		});
+		editor.addButton('tmcd_listbox_one', {
+			type: 'listbox',
+			text: 'Select Something',
+			values:[
+				{
+					text:'Apple',
+					value:'You have selcted <b>Apple</b>'
+				},
+				{
+					text:'Orange',
+					value:'You have selcted <em>Orange</em>'
+				},
+				{
+					text:'Banana',
+					value:'You have selcted <u>Banana</u>'
+				}
+			],
+			onselect:function(){
+				editor.insertContent(this.value());
+			},
+			onPostRender:function(){
+				this.value('You have selcted <em>Orange</em>');
+			}
+		});
 	});
 })(jQuery);
