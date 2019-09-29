@@ -1,0 +1,1 @@
+2019/09/28 09:05:09 [error] 108#0: *1326 directory index of "/app/public/javatpointphp/" is forbidden, client: 127.0.0.1, server: , request: "GET /javatpointphp/ HTTP/1.0", host: "wpplugindev.local"
