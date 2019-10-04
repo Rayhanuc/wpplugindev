@@ -385,3 +385,182 @@ Stack trace:
 #3 /app/public/wp-admin/widgets.php(442): wp_list_widgets()
 #4 {main}
   thrown in /app/public/wp-content/plugins/DemoWidget/widgets/class.demowidget2.php on line 17
+[02-Oct-2019 06:57:02 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[02-Oct-2019 06:57:03 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[02-Oct-2019 06:57:03 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[02-Oct-2019 12:38:24 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertisementWidget' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('AdvertisementWi...')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(28): register_widget('AdvertisementWi...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[02-Oct-2019 12:38:51 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertisementWidget' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('AdvertisementWi...')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(28): register_widget('AdvertisementWi...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[02-Oct-2019 12:39:23 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertisementWidget' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('AdvertisementWi...')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(28): register_widget('AdvertisementWi...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[02-Oct-2019 12:41:26 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertisementWidget' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('AdvertisementWi...')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(28): register_widget('AdvertisementWi...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[02-Oct-2019 12:43:28 UTC] PHP Fatal error:  Uncaught Error: Class 'AdvertisementWidget' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('AdvertisementWi...')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(28): register_widget('AdvertisementWi...')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[02-Oct-2019 12:45:27 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/DemoWidget/demowidget.php on line 37
+[02-Oct-2019 12:45:42 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/DemoWidget/demowidget.php on line 37
+[02-Oct-2019 13:00:23 UTC] PHP Fatal error:  Class 'W__Widget' not found in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 10
+[02-Oct-2019 13:16:03 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 58
+[02-Oct-2019 13:16:03 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 58
+[02-Oct-2019 13:17:00 UTC] PHP Fatal error:  Class 'W__Widget' not found in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 10
+[02-Oct-2019 13:17:07 UTC] PHP Fatal error:  Class 'W__Widget' not found in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 10
+[02-Oct-2019 13:17:29 UTC] PHP Fatal error:  Class 'W__Widget' not found in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 10
+[02-Oct-2019 13:17:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WP_Widget::_construct() in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php:16
+Stack trace:
+#0 /app/public/wp-includes/class-wp-widget-factory.php(100): AdvertisementWidget->__construct()
+#1 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('AdvertisementWi...')
+#2 /app/public/wp-content/plugins/DemoWidget/demowidget.php(28): register_widget('AdvertisementWi...')
+#3 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#4 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#6 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#7 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#8 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#9 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#10 /app/public/wp-settings.php(525) in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 16
+[02-Oct-2019 13:32:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 111
+[02-Oct-2019 13:34:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 111
+[02-Oct-2019 13:36:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 111
+[02-Oct-2019 13:38:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 111
+[02-Oct-2019 13:38:58 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 111
+[02-Oct-2019 17:02:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function saniteze_texdt_field() in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php:77
+Stack trace:
+#0 /app/public/wp-includes/class-wp-widget.php(441): AdvertisementWidget->update(Array, Array)
+#1 /app/public/wp-admin/includes/ajax-actions.php(2223): WP_Widget->update_callback(Array)
+#2 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_save_widget('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-admin/admin-ajax.php(173): do_action('wp_ajax_save-wi...')
+#6 {main}
+  thrown in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 77
+[02-Oct-2019 17:03:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function saniteze_texdt_field() in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php:77
+Stack trace:
+#0 /app/public/wp-includes/class-wp-widget.php(441): AdvertisementWidget->update(Array, Array)
+#1 /app/public/wp-admin/includes/ajax-actions.php(2223): WP_Widget->update_callback(Array)
+#2 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_save_widget('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-admin/admin-ajax.php(173): do_action('wp_ajax_save-wi...')
+#6 {main}
+  thrown in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 77
+[02-Oct-2019 17:04:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function saniteze_texdt_field() in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php:77
+Stack trace:
+#0 /app/public/wp-includes/class-wp-widget.php(441): AdvertisementWidget->update(Array, Array)
+#1 /app/public/wp-admin/includes/ajax-actions.php(2223): WP_Widget->update_callback(Array)
+#2 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_save_widget('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-admin/admin-ajax.php(173): do_action('wp_ajax_save-wi...')
+#6 {main}
+  thrown in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 77
+[02-Oct-2019 17:04:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function saniteze_texdt_field() in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php:77
+Stack trace:
+#0 /app/public/wp-includes/class-wp-widget.php(441): AdvertisementWidget->update(Array, Array)
+#1 /app/public/wp-admin/includes/ajax-actions.php(2223): WP_Widget->update_callback(Array)
+#2 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_save_widget('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-admin/admin-ajax.php(173): do_action('wp_ajax_save-wi...')
+#6 {main}
+  thrown in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 77
+[02-Oct-2019 17:04:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function saniteze_texdt_field() in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php:77
+Stack trace:
+#0 /app/public/wp-includes/class-wp-widget.php(441): AdvertisementWidget->update(Array, Array)
+#1 /app/public/wp-admin/includes/ajax-actions.php(2223): WP_Widget->update_callback(Array)
+#2 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_save_widget('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-admin/admin-ajax.php(173): do_action('wp_ajax_save-wi...')
+#6 {main}
+  thrown in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 77
+[02-Oct-2019 17:04:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function saniteze_texdt_field() in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php:77
+Stack trace:
+#0 /app/public/wp-includes/class-wp-widget.php(441): AdvertisementWidget->update(Array, Array)
+#1 /app/public/wp-admin/includes/ajax-actions.php(2223): WP_Widget->update_callback(Array)
+#2 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_save_widget('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-admin/admin-ajax.php(173): do_action('wp_ajax_save-wi...')
+#6 {main}
+  thrown in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 77
+[02-Oct-2019 17:04:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function saniteze_texdt_field() in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php:77
+Stack trace:
+#0 /app/public/wp-includes/class-wp-widget.php(441): AdvertisementWidget->update(Array, Array)
+#1 /app/public/wp-admin/includes/ajax-actions.php(2223): WP_Widget->update_callback(Array)
+#2 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_save_widget('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-admin/admin-ajax.php(173): do_action('wp_ajax_save-wi...')
+#6 {main}
+  thrown in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 77
+[02-Oct-2019 17:11:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function saniteze_texdt_field() in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php:77
+Stack trace:
+#0 /app/public/wp-includes/class-wp-widget.php(441): AdvertisementWidget->update(Array, Array)
+#1 /app/public/wp-admin/includes/ajax-actions.php(2223): WP_Widget->update_callback(Array)
+#2 /app/public/wp-includes/class-wp-hook.php(286): wp_ajax_save_widget('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-admin/admin-ajax.php(173): do_action('wp_ajax_save-wi...')
+#6 {main}
+  thrown in /app/public/wp-content/plugins/DemoWidget/widgets/class.Advertisementwidget.php on line 77
