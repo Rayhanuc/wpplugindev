@@ -588,3 +588,73 @@ Stack trace:
 [04-Oct-2019 17:06:13 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/DemoWidget/demowidget.php on line 38
 [04-Oct-2019 17:06:32 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/DemoWidget/demowidget.php on line 38
 [05-Oct-2019 06:02:49 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[05-Oct-2019 17:16:24 UTC] PHP Fatal error:  Uncaught Error: Class 'DemoWidgetUI' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('DemoWidgetUI')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(29): register_widget('DemoWidgetUI')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once('/app/public/wp-.. in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[05-Oct-2019 17:17:26 UTC] PHP Fatal error:  Uncaught Error: Class 'DemoWidgetUI' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('DemoWidgetUI')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(29): register_widget('DemoWidgetUI')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once('/app/public/wp-.. in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[05-Oct-2019 17:17:44 UTC] PHP Fatal error:  Uncaught Error: Class 'DemoWidgetUI' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('DemoWidgetUI')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(29): register_widget('DemoWidgetUI')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once('/app/public/wp-.. in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[05-Oct-2019 17:18:23 UTC] PHP Fatal error:  Uncaught Error: Class 'DemoWidgetUI' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('DemoWidgetUI')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(29): register_widget('DemoWidgetUI')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once('/app/public/wp-.. in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[05-Oct-2019 17:21:19 UTC] PHP Fatal error:  Uncaught Error: Class 'DemoWidgetUI' not found in /app/public/wp-includes/class-wp-widget-factory.php:100
+Stack trace:
+#0 /app/public/wp-includes/widgets.php(115): WP_Widget_Factory->register('DemoWidgetUI')
+#1 /app/public/wp-content/plugins/DemoWidget/demowidget.php(29): register_widget('DemoWidgetUI')
+#2 /app/public/wp-includes/class-wp-hook.php(286): demowidget_register('')
+#3 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#5 /app/public/wp-includes/widgets.php(1715): do_action('widgets_init')
+#6 /app/public/wp-includes/class-wp-hook.php(286): wp_widgets_init('')
+#7 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#9 /app/public/wp-settings.php(525): do_action('init')
+#10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#11 /app/public/wp-load.php(37): require_once('/app/public/wp-.. in /app/public/wp-includes/class-wp-widget-factory.php on line 100
