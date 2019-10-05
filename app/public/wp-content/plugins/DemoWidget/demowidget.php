@@ -14,7 +14,7 @@
 */
 
 require_once plugin_dir_path(__FILE__)."widgets/class.demowidget.php";
-require_once plugin_dir_path(__FILE__)."widgets/class.Advertisementwidget2.php";
+require_once plugin_dir_path(__FILE__)."widgets/class.Advertisementwidget.php";
 
 
 function demowidget_load_textdomain(){
@@ -33,7 +33,8 @@ add_action('widgets_init','demowidget_register');
 function demowidget_admin_enqueue_scripts($screen){
 	if ($screen == "widgets.php") {
 		wp_enqueue_media(  );
-		wp_enqueue_script("advertisment-widget-js", plugin_dir_url(__FILE__)."assets/js/media-gallery.js");
+		wp_enqueue_script("advertisment-widget-js", plugin_dir_url(__FILE__)."assets/js/media-gallery.js", array('jquery'), '1.0', 1);
+		// wp_enqueue_style( 'demowidget-admin-ui-css', plugin_dir_url(__FILE__)."assets/jcss/widget.css", null, '1.0', 'all' );
 	}
 }
 add_action("admin_enqueue_scripts","demowidget_admin_enqueue_scripts");
