@@ -658,3 +658,12 @@ Stack trace:
 #9 /app/public/wp-settings.php(525): do_action('init')
 #10 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
 #11 /app/public/wp-load.php(37): require_once('/app/public/wp-.. in /app/public/wp-includes/class-wp-widget-factory.php on line 100
+[08-Oct-2019 12:54:14 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[08-Oct-2019 17:02:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_dashbord_primary_output() in /app/public/wp-content/plugins/DashboardWidget/dashboardwidget.php:44
+Stack trace:
+#0 /app/public/wp-admin/includes/template.php(1310): ddw_dashboardwidget_output('', Array)
+#1 /app/public/wp-admin/includes/dashboard.php(232): do_meta_boxes(Object(WP_Screen), 'normal', '')
+#2 /app/public/wp-admin/index.php(148): wp_dashboard()
+#3 {main}
+  thrown in /app/public/wp-content/plugins/DashboardWidget/dashboardwidget.php on line 44
+[08-Oct-2019 17:15:00 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'ddw_dashboardwidget_output2' not found or invalid function name in /app/public/wp-admin/includes/template.php on line 1310
