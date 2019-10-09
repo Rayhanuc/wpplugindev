@@ -80,3 +80,115 @@ Stack trace:
 2019/10/08 17:02:49 [SMTP 127.0.0.1:48502] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
 2019/10/08 17:02:49 [SMTP 127.0.0.1:48502] Sent 9 bytes: '221 Bye\r\n'
 2019/10/08 17:02:49 [SMTP 127.0.0.1:48502] Session ended
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Starting session
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Received 16 bytes: 'EHLO localhost\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: ESTABLISH] In ESTABLISH state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Received 35 bytes: 'MAIL FROM:<www-data@ed56224bd5da>\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@ed56224bd5da>
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@ed56224bd5da>'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: MAIL] In MAIL state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Sent 37 bytes: '250 Sender www-data@ed56224bd5da ok\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: RCPT] In RCPT state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: RCPT] Got RCPT command
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Received 6 bytes: 'DATA\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: RCPT] Processing line: DATA
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: RCPT] In RCPT state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Received 514 bytes: 'To: dev-email@flywheel.local\r\nSubject: [wpplugindev] New User Registration\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Wed, 9 Oct 2019 12:10:26 +0000\r\nFrom: WordPress <wordpress@wpplugindev.local>\r\nMessage-ID: <47d204fb42fd86971ef162fed7a91600@wpplugindev.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nNew user registration on your site wpplugindev:\r\n\r\nUsername: testuser\r\n\r\nEmail: testuser@test.com\r\n\r\n.\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/10/09 12:10:26 Parsing Content from string: 'To: dev-email@flywheel.local
+Subject: [wpplugindev] New User Registration
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Wed, 9 Oct 2019 12:10:26 +0000
+From: WordPress <wordpress@wpplugindev.local>
+Message-ID: <47d204fb42fd86971ef162fed7a91600@wpplugindev.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+New user registration on your site wpplugindev:
+
+Username: testuser
+
+Email: testuser@test.com
+'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Storing message 3KoKLJv7r9TysEUr5FlByxn-HmtMZO8piTzXmTiibjU=@mailhog.example
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Sent 80 bytes: '250 Ok: queued as 3KoKLJv7r9TysEUr5FlByxn-HmtMZO8piTzXmTiibjU=@mailhog.example\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Received 6 bytes: 'QUIT\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: MAIL] Processing line: QUIT
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Sent 9 bytes: '221 Bye\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56582] Session ended
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Starting session
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Received 16 bytes: 'EHLO localhost\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: ESTABLISH] In ESTABLISH state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Received 35 bytes: 'MAIL FROM:<www-data@ed56224bd5da>\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@ed56224bd5da>
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@ed56224bd5da>'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: MAIL] In MAIL state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Sent 37 bytes: '250 Sender www-data@ed56224bd5da ok\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: RCPT] In RCPT state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: RCPT] Got RCPT command
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Received 6 bytes: 'DATA\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: RCPT] Processing line: DATA
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: RCPT] In RCPT state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/10/09 12:10:26 [SMTP 127.0.0.1:56584] Received 608 bytes: 'To: testuser@test.com\r\nSubject: [wpplugindev] Login Details\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Wed, 9 Oct 2019 12:10:26 +0000\r\nFrom: WordPress <wordpress@wpplugindev.local>\r\nMessage-ID: <42e8473959a97557a3cf77b3da9c67ab@wpplugindev.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nUsername: testuser\r\n\r\nTo set your password, visit the following address:\r\n\r\n<http://wpplugindev.local/wp-login.php?action=rp&key=7ofRCEIVUHBGwKA1pQ1V&login=testuser>\r\n\r\nhttp://wpplugindev.local/wp-login.php\r\n\r\n.\r\n'
+2019/10/09 12:10:27 [SMTP 127.0.0.1:56584] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/10/09 12:10:27 Parsing Content from string: 'To: testuser@test.com
+Subject: [wpplugindev] Login Details
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Wed, 9 Oct 2019 12:10:26 +0000
+From: WordPress <wordpress@wpplugindev.local>
+Message-ID: <42e8473959a97557a3cf77b3da9c67ab@wpplugindev.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Username: testuser
+
+To set your password, visit the following address:
+
+<http://wpplugindev.local/wp-login.php?action=rp&key=7ofRCEIVUHBGwKA1pQ1V&login=testuser>
+
+http://wpplugindev.local/wp-login.php
+'
+2019/10/09 12:10:27 [SMTP 127.0.0.1:56584] Storing message SsAjPKgoEpQg07m0MRcC1K3556dGwApGbx1kQ-76PaU=@mailhog.example
+2019/10/09 12:10:27 [SMTP 127.0.0.1:56584] Sent 80 bytes: '250 Ok: queued as SsAjPKgoEpQg07m0MRcC1K3556dGwApGbx1kQ-76PaU=@mailhog.example\r\n'
+2019/10/09 12:10:27 [SMTP 127.0.0.1:56584] Received 6 bytes: 'QUIT\r\n'
+2019/10/09 12:10:27 [SMTP 127.0.0.1:56584] [PROTO: MAIL] Processing line: QUIT
+2019/10/09 12:10:27 [SMTP 127.0.0.1:56584] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/10/09 12:10:27 [SMTP 127.0.0.1:56584] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/10/09 12:10:27 [SMTP 127.0.0.1:56584] Sent 9 bytes: '221 Bye\r\n'
+2019/10/09 12:10:27 [SMTP 127.0.0.1:56584] Session ended
