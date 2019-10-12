@@ -327,7 +327,6 @@ INSERT INTO `wp_postmeta` VALUES
 (381,154,"_custom_page_side_options","a:3:{s:22:\"section_3_image_select\";s:7:\"value-2\";s:14:\"section_3_text\";s:0:\"\";s:18:\"section_3_switcher\";b:1;}"),
 (382,154,"csdemo-book-info","a:6:{s:6:\"author\";s:0:\"\";s:4:\"year\";s:0:\"\";s:4:\"isbn\";s:0:\"\";s:7:\"author2\";s:0:\"\";s:5:\"year2\";s:0:\"\";s:5:\"isbn2\";s:0:\"\";}"),
 (389,129,"_edit_lock","1569611120:1"),
-(391,166,"wordn","0"),
 (392,167,"wordn","5"),
 (393,167,"_edit_last","1"),
 (394,167,"_edit_lock","1569737360:1"),
