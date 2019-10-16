@@ -38,7 +38,7 @@ INSERT INTO `wp_usermeta` VALUES
 (35,2,"wp_capabilities","a:1:{s:10:\"subscriber\";b:1;}"),
 (36,2,"wp_user_level","0"),
 (37,2,"dismissed_wp_pointers",""),
-(38,1,"session_tokens","a:1:{s:64:\"47f129bf33f1142c466037a8f806aec2a90cf72ea182780dd330211d59b076b1\";a:4:{s:10:\"expiration\";i:1570796228;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3915.0 Safari/537.36 Edg/79.0.287.3\";s:5:\"login\";i:1570623428;}}"),
+(38,1,"session_tokens","a:1:{s:64:\"14d5b2de147fda5b06d23ebcee822a4dea2b95b4eaeb67d810e4b35640aef86a\";a:4:{s:10:\"expiration\";i:1571035427;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3919.0 Safari/537.36 Edg/79.0.294.1\";s:5:\"login\";i:1570862627;}}"),
 (40,2,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (41,2,"closedpostboxes_dashboard","a:1:{i:0;s:19:\"demodashboardwidget\";}"),
 (42,2,"metaboxhidden_dashboard","a:0:{}");
