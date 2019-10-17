@@ -12,6 +12,7 @@
  * License URI: http://
  * Text Domain: popupcreator
  * Domain Path: /languages/
+ * Plugin Type: Piklist
  */
 
 
@@ -19,6 +20,17 @@ class PopupCreator{
 	public function __construct() {
 		add_action('plugins_loaded', array($this,'load_textdomain'));
 		add_action('init', array($this, 'register_cpt_popup'));
+		add_action('init', array($this, 'register_popup_size'));
+		add_action('wp_enqueue_scripts', array($this, 'load_assets'));
+	}
+
+	function load_assets(){
+		wp_enqueue_script('popupcreator-main',plugin_dir_url(__FILE__)."assets/js/popupcreator-main.js", array('jquery'), time(), ture);
+	}
+
+	function register_popup_size(){
+		add_image_size('popup-landscape','600','800',true);
+		add_image_size('popup-square','500','500',true);
 	}
 
 	function load_textdomain() {
