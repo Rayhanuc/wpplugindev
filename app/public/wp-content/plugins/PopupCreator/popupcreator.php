@@ -22,10 +22,17 @@ class PopupCreator{
 		add_action('init', array($this, 'register_cpt_popup'));
 		add_action('init', array($this, 'register_popup_size'));
 		add_action('wp_enqueue_scripts', array($this, 'load_assets'));
+		add_action('wp_footer', array($this, 'print_modal_markup'));
 	}
 
 	function load_assets(){
-		wp_enqueue_script('popupcreator-main',plugin_dir_url(__FILE__)."assets/js/popupcreator-main.js", array('jquery'), time(), ture);
+		wp_enqueue_style('popupcreator-css',plugin_dir_url(__FILE__)."assets/css/modal.css",  time(),'all');
+
+		wp_enqueue_script('plainmodal-js',plugin_dir_url(__FILE__)."assets/js/plain-modal.min.js", array('jquery'), time(), true);
+		wp_enqueue_script('popupcreator-main',plugin_dir_url(__FILE__)."assets/js/popupcreator-main.js", array(
+			'jquery',
+			'plainmodal-js'
+		), time(), true);
 	}
 
 	function register_popup_size(){
@@ -68,6 +75,23 @@ class PopupCreator{
 
 		register_post_type("popup", $args);
 
+	}
+
+
+	function print_modal_markup(){
+		?>
+
+		<div id="modal-content" style="">
+			<div >
+				<img id="close-button" width="30" 
+				src="<?php echo plugin_dir_url(__FILE__)."assets/img/x.png"; ?>"  alt="<?php _e('Close','popupcreator'); ?>">
+			</div>
+			<!-- <img src="https://images.unsplash.com/photo-1571263823664-67871c119f7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" > -->
+			<!-- <img src="https://images.unsplash.com/photo-1571254932857-5c81a8e458b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" width="600" height="700"> -->
+			<img src="<?php echo plugin_dir_url(__FILE__).'assets/img/dawn-desktop-background-dusk-36717.jpg'; ?>" alt="" width="600" height="700">
+		</div>
+
+		<?php
 	}
 }
 
