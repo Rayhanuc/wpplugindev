@@ -1,4 +1,4 @@
-#modal-content{
+.modal-content{
 	background-color: white;
 	padding: 50px 50px 50px 50px;
 	position:relative;
@@ -9,7 +9,7 @@
 	height:200%;
 }
 
-#close-button {
+.close-button {
     position: absolute;
     right: -26px;
     top: -35px;

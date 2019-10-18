@@ -5,6 +5,17 @@ Post Type: popup
 */
 
 piklist('field', array(
+    'type' => 'checkbox',
+    'field' => 'popupcreator_active',
+    'label' => __('Active','popupcreator'),
+    'description' => __('Popup active or not','popupcreator'),
+    'value' => 0,
+    'choices' => array(
+        1=> __('Active','popupcreator')
+    )
+));
+
+piklist('field', array(
     'type' => 'text',
     'field' => 'popupcreator_diplay_after',
     'label' => __('Display Popup After','popupcreator'),
@@ -52,7 +63,8 @@ piklist('field', array(
     'description' => __('Popup Size description','popupcreator'),
     'value' => 'landscape',
     'choices' => array(
-      'landscape' => __('Landscape','popupcreator'),
-      'square' => __('Square','popupcreator'),
+      'popup-landscape' => __('Landscape','popupcreator'),
+      'popup-square' => __('Square','popupcreator'),
+      'full' => __('Original','popupcreator'),
     )
 ));

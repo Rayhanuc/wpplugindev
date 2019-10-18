@@ -802,3 +802,28 @@ Stack trace:
 [17-Oct-2019 17:27:19 UTC] PHP Warning:  Use of undefined constant ture - assumed 'ture' (this will throw an Error in a future version of PHP) in /app/public/wp-content/plugins/PopupCreator/popupcreator.php on line 29
 [17-Oct-2019 17:27:19 UTC] PHP Warning:  Use of undefined constant ture - assumed 'ture' (this will throw an Error in a future version of PHP) in /app/public/wp-content/plugins/PopupCreator/popupcreator.php on line 31
 [17-Oct-2019 17:27:19 UTC] PHP Warning:  Use of undefined constant ture - assumed 'ture' (this will throw an Error in a future version of PHP) in /app/public/wp-content/plugins/PopupCreator/popupcreator.php on line 35
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 14:30:31 UTC] PHP Warning:  A non-numeric value encountered in /app/public/wp-includes/media.php on line 648
+[18-Oct-2019 18:30:36 UTC] PHP Warning:  Illegal string offset 'sizes' in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 208
+[18-Oct-2019 18:30:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 208
+[18-Oct-2019 18:30:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 245
+[18-Oct-2019 18:30:53 UTC] PHP Warning:  Illegal string offset 'sizes' in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 208
+[18-Oct-2019 18:30:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 208
+[18-Oct-2019 18:30:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 245
+[18-Oct-2019 18:31:14 UTC] PHP Warning:  Illegal string offset 'sizes' in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 208
+[18-Oct-2019 18:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 208
+[18-Oct-2019 18:31:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 245
+[18-Oct-2019 18:31:18 UTC] PHP Warning:  Illegal string offset 'sizes' in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 208
+[18-Oct-2019 18:31:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 208
+[18-Oct-2019 18:31:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/plugins/regenerate-thumbnails/includes/class-regeneratethumbnails-regenerator.php on line 245

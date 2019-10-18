@@ -79,19 +79,37 @@ class PopupCreator{
 
 
 	function print_modal_markup(){
-		?>
+		$arguments = array(
+			'post_type' => 'popup',
+			'post_status' => 'publish',
+			'meta_key' => 'popupcreator_active',
+			'meta_value' => 1
+		);
+		$query = new WP_Query($arguments);
+		while($query->have_posts()){
+			$query->the_post();
+			$img_size = get_post_meta(get_the_ID(), 'popupcreator_popup_size',true);
+			$image = get_the_post_thumbnail_url(get_the_ID(), $img_size);
 
-		<div id="modal-content" style="">
-			<div >
-				<img id="close-button" width="30" 
-				src="<?php echo plugin_dir_url(__FILE__)."assets/img/x.png"; ?>"  alt="<?php _e('Close','popupcreator'); ?>">
+			?>
+
+			<div class="modal-content" data-modal-id="<?php the_ID(); ?>" data-size="<?php echo $img_size; ?>">
+				<div>
+					<img class="close-button" width="30" 
+					src="<?php echo plugin_dir_url(__FILE__)."assets/img/x.png"; ?>"  alt="<?php _e('Close','popupcreator'); ?>">
+				</div>
+				<!-- External image link in wordpress plugin -->
+				<!-- <img src="https://images.unsplash.com/photo-1571263823664-67871c119f7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" > -->
+				<img src="<?php echo esc_url($image); ?>" 
+				alt="<?php _e('Popup','popupcreator'); ?>">
+
+				<!-- internal image link in plugin -->
+				<!-- <img src="<?php //echo plugin_dir_url(__FILE__).'assets/img/dawn-desktop-background-dusk-36717.jpg'; ?>" alt="" width="600" height="700"> -->
 			</div>
-			<!-- <img src="https://images.unsplash.com/photo-1571263823664-67871c119f7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" > -->
-			<!-- <img src="https://images.unsplash.com/photo-1571254932857-5c81a8e458b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" width="600" height="700"> -->
-			<img src="<?php echo plugin_dir_url(__FILE__).'assets/img/dawn-desktop-background-dusk-36717.jpg'; ?>" alt="" width="600" height="700">
-		</div>
 
-		<?php
+			<?php
+		}
+		wp_reset_query();
 	}
 }
 
