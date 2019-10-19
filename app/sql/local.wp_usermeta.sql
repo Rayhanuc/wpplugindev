@@ -17,7 +17,7 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers","piklist_demos"),
 (15,1,"show_welcome_panel","1"),
-(17,1,"wp_dashboard_quick_press_last_post_id","174"),
+(17,1,"wp_dashboard_quick_press_last_post_id","175"),
 (18,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (19,1,"wp_user-settings","libraryContent=browse&editor=tinymce&widgets_access=off"),
 (20,1,"wp_user-settings-time","1569838639"),
@@ -38,7 +38,7 @@ INSERT INTO `wp_usermeta` VALUES
 (35,2,"wp_capabilities","a:1:{s:10:\"subscriber\";b:1;}"),
 (36,2,"wp_user_level","0"),
 (37,2,"dismissed_wp_pointers",""),
-(38,1,"session_tokens","a:1:{s:64:\"14d5b2de147fda5b06d23ebcee822a4dea2b95b4eaeb67d810e4b35640aef86a\";a:4:{s:10:\"expiration\";i:1571035427;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3919.0 Safari/537.36 Edg/79.0.294.1\";s:5:\"login\";i:1570862627;}}"),
+(38,1,"session_tokens","a:4:{s:64:\"8fa1012a8f08346162fc1ce59f74faed660efe76e89d65755bb85753bd2ec838\";a:4:{s:10:\"expiration\";i:1571397840;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3919.0 Safari/537.36 Edg/79.0.294.1\";s:5:\"login\";i:1571225040;}s:64:\"45918818c166a5d177ca1e8dd4ce8fe41d016db594823bdb397b68be8e41a4aa\";a:4:{s:10:\"expiration\";i:1571462905;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3919.0 Safari/537.36 Edg/79.0.294.1\";s:5:\"login\";i:1571290105;}s:64:\"ce751ca13d94ab82fd34722f3737dce76ac77595ba51c0eca9c7831c1765d765\";a:4:{s:10:\"expiration\";i:1571469024;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3919.0 Safari/537.36 Edg/79.0.294.1\";s:5:\"login\";i:1571296224;}s:64:\"22cb4ab6a6c5282abf23c810d77fafc22025e3c5f5eb66ba08596c7383185542\";a:4:{s:10:\"expiration\";i:1571469273;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3919.0 Safari/537.36 Edg/79.0.294.1\";s:5:\"login\";i:1571296473;}}"),
 (40,2,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (41,2,"closedpostboxes_dashboard","a:1:{i:0;s:19:\"demodashboardwidget\";}"),
 (42,2,"metaboxhidden_dashboard","a:0:{}");

@@ -89,11 +89,18 @@ class PopupCreator{
 		while($query->have_posts()){
 			$query->the_post();
 			$img_size = get_post_meta(get_the_ID(), 'popupcreator_popup_size',true);
+			$popup_exit = get_post_meta(get_the_ID(), 'popupcreator_on_exit',true);
+			$delay = get_post_meta(get_the_ID(), 'popupcreator_display_after',true);
+			if ($delay>0) {
+				$delay *= 1000; 
+			}else {
+				$delay = 0;
+			}
 			$image = get_the_post_thumbnail_url(get_the_ID(), $img_size);
 
 			?>
 
-			<div class="modal-content" data-modal-id="<?php the_ID(); ?>" data-size="<?php echo $img_size; ?>">
+			<div class="modal-content" data-modal-id="<?php the_ID(); ?>" data-size="<?php echo esc_attr($img_size); ?>" data-exit="<?php echo esc_attr($popup_exit); ?>" data-delay="<?php echo esc_attr($delay); ?>">
 				<div>
 					<img class="close-button" width="30" 
 					src="<?php echo plugin_dir_url(__FILE__)."assets/img/x.png"; ?>"  alt="<?php _e('Close','popupcreator'); ?>">

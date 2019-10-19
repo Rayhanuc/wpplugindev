@@ -17,7 +17,7 @@ piklist('field', array(
 
 piklist('field', array(
     'type' => 'text',
-    'field' => 'popupcreator_diplay_after',
+    'field' => 'popupcreator_display_after',
     'label' => __('Display Popup After','popupcreator'),
     'description' => __('This is field discription','popupcreator'),
     'value' => '5',
@@ -46,13 +46,14 @@ piklist('field', array(
 ));
 
 piklist('field', array(
-    'type' => 'checkbox',
+    'type' => 'radio',
     'field' => 'popupcreator_on_exit',
     'label' => __('Display On Exit','popupcreator'),
     'description' => __('Display On Exit description','popupcreator'),
     'value' => 1,
     'choices' => array(
-      0 => __('Display On Exit','popupcreator')
+      0 => __('Display On Exit','popupcreator'),
+      1 => __('Display On Page Load','popupcreator')
     )
 ));
 
