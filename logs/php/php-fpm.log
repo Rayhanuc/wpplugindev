@@ -153,3 +153,15 @@
 [19-Oct-2019 03:36:13] NOTICE: fpm is running, pid 111
 [19-Oct-2019 03:36:13] NOTICE: ready to handle connections
 [19-Oct-2019 13:13:22] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[19-Oct-2019 18:39:35] NOTICE: Terminating ...
+[19-Oct-2019 18:39:35] NOTICE: exiting, bye-bye!
+[21-Oct-2019 18:17:58] NOTICE: fpm is running, pid 24
+[21-Oct-2019 18:17:58] NOTICE: ready to handle connections
+[21-Oct-2019 18:18:49] NOTICE: Terminating ...
+[21-Oct-2019 18:18:50] NOTICE: exiting, bye-bye!
+[21-Oct-2019 18:30:34] NOTICE: fpm is running, pid 133
+[21-Oct-2019 18:30:34] NOTICE: ready to handle connections
+[21-Oct-2019 19:24:54] NOTICE: Terminating ...
+[21-Oct-2019 19:24:54] NOTICE: exiting, bye-bye!
+[22-Oct-2019 14:51:48] NOTICE: fpm is running, pid 51
+[22-Oct-2019 14:51:48] NOTICE: ready to handle connections

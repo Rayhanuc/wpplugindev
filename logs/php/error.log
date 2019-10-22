@@ -830,3 +830,67 @@ Stack trace:
 [19-Oct-2019 13:39:52 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
 [19-Oct-2019 13:39:53 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
 [19-Oct-2019 13:39:53 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[21-Oct-2019 18:31:53 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[21-Oct-2019 18:31:54 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[22-Oct-2019 18:25:53 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
+[22-Oct-2019 18:26:08 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
+[22-Oct-2019 18:26:08 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
+[22-Oct-2019 18:26:31 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/tabledata/tabledata.php on line 32
+[22-Oct-2019 18:26:43 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/tabledata/tabledata.php on line 32
+[22-Oct-2019 18:26:44 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/plugins/tabledata/tabledata.php on line 32
+[22-Oct-2019 18:41:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function cla_exits() in /app/public/wp-content/plugins/tabledata/tabledata.php:20
+Stack trace:
+#0 /app/public/wp-settings.php(362): include_once()
+#1 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#2 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#3 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
+[22-Oct-2019 18:43:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function cla_exits() in /app/public/wp-content/plugins/tabledata/tabledata.php:20
+Stack trace:
+#0 /app/public/wp-settings.php(362): include_once()
+#1 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#2 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#3 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
+[22-Oct-2019 18:45:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function cla_exits() in /app/public/wp-content/plugins/tabledata/tabledata.php:20
+Stack trace:
+#0 /app/public/wp-settings.php(362): include_once()
+#1 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#2 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#3 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
+[22-Oct-2019 18:46:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function cla_exits() in /app/public/wp-content/plugins/tabledata/tabledata.php:20
+Stack trace:
+#0 /app/public/wp-settings.php(362): include_once()
+#1 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#2 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#3 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
+[22-Oct-2019 18:47:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function cla_exits() in /app/public/wp-content/plugins/tabledata/tabledata.php:20
+Stack trace:
+#0 /app/public/wp-settings.php(362): include_once()
+#1 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#2 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#3 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
+[22-Oct-2019 18:48:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function cla_exits() in /app/public/wp-content/plugins/tabledata/tabledata.php:20
+Stack trace:
+#0 /app/public/wp-settings.php(362): include_once()
+#1 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#2 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#3 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
+[22-Oct-2019 18:50:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function cla_exits() in /app/public/wp-content/plugins/tabledata/tabledata.php:20
+Stack trace:
+#0 /app/public/wp-settings.php(362): include_once()
+#1 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#2 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#3 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/tabledata/tabledata.php on line 20
