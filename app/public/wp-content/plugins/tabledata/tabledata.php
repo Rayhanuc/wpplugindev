@@ -14,12 +14,10 @@
  * Domain Path: /languages/
  */
 
-include_once "dataset.php";
 
-// WordPress install path  (absolute path)
-if (!cla_exits("WP_List_Table")) {
-	require_once("ABSPATH"."wp-admin/includes/class-wp-list-table.php");
-}
+require_once "class-persons-table.php";
+
+
 
 
 function tabledata_load_textdoma(){
@@ -39,6 +37,25 @@ function datatable_admin_page(){
 }
 
 function datatable_display_table(){
-	echo "<h2>Hello World</h2>";
+	include_once "dataset.php";
+	$table = new Persons_Table();
+	// print_r($data);
+	$table->set_data($data);
+	$table->prepare_items();
+	?>
+
+	<div class="wrap">
+		<h2><?php _e("Persons","tabledata") ?></h2>
+		<form method="GET">
+			<?php
+			$table->search_box('search','search_id');
+			$table->display();
+			?>
+		</form>
+	</div>
+
+
+	<?php
+	
 }
 add_action("admin_menu","datatable_admin_page");

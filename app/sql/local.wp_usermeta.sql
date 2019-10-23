@@ -38,7 +38,7 @@ INSERT INTO `wp_usermeta` VALUES
 (35,2,"wp_capabilities","a:1:{s:10:\"subscriber\";b:1;}"),
 (36,2,"wp_user_level","0"),
 (37,2,"dismissed_wp_pointers",""),
-(38,1,"session_tokens","a:3:{s:64:\"0c09dd576d2009d0dfd6cc9176759bfa01db944a05f5a8fe0fca09c29eb83a0d\";a:4:{s:10:\"expiration\";i:1571631459;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3936.0 Safari/537.36 Edg/79.0.301.2\";s:5:\"login\";i:1571458659;}s:64:\"b211f0013bbe91b500f77e72f9e90830b403755cad0e2185ec48f2da22ca960e\";a:4:{s:10:\"expiration\";i:1571663879;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3936.0 Safari/537.36 Edg/79.0.301.2\";s:5:\"login\";i:1571491079;}s:64:\"fa57c554ef81397ed715a288858ead3e988668c5704a3d4fa748bd44f5a4eb73\";a:4:{s:10:\"expiration\";i:1571664202;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3936.0 Safari/537.36 Edg/79.0.301.2\";s:5:\"login\";i:1571491402;}}"),
+(38,1,"session_tokens","a:1:{s:64:\"f67c11a931098d4cd8cf133dc7654d76c470d0acbc864da0fdc2af953aff7229\";a:4:{s:10:\"expiration\";i:1571933412;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3936.0 Safari/537.36 Edg/79.0.301.2\";s:5:\"login\";i:1571760612;}}"),
 (40,2,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (41,2,"closedpostboxes_dashboard","a:1:{i:0;s:19:\"demodashboardwidget\";}"),
 (42,2,"metaboxhidden_dashboard","a:0:{}");
