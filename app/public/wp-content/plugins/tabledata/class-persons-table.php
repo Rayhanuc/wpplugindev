@@ -18,8 +18,19 @@ class Persons_Table extends WP_List_Table{
 			'name' => __('Name','tabledata'),
 			'email' => __('E-mail','tabledata'),
 			'age' => __('Age','tabledata'),
-			'name' => __('Name','tabledata'),
 		];
+	}
+
+	function column_cb($item){
+		return "<input type='checkbox' value='{$item['id']}'/>";
+	}
+
+	function column_email($item){
+		return "<strong>{$item['email']}</strong>";
+	}
+
+	function column_age($item){
+		return "<em>{$item['age']}</em>";
 	}
 
 	function prepare_items(){

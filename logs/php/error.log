@@ -1164,3 +1164,5 @@ Stack trace:
 [23-Oct-2019 04:50:52 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 28
 [23-Oct-2019 04:56:05 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 37
 [23-Oct-2019 04:56:06 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 37
+[23-Oct-2019 09:05:26 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 27
+[23-Oct-2019 11:18:49 UTC] PHP Fatal error:  Cannot redeclare Persons_Table::column_email() in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 33
