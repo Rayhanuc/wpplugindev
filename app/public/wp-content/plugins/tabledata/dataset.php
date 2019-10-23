@@ -37,4 +37,10 @@ $data = [
 		'email' => 'jason@doe.com',
 		'age' => 28
 	],
+	[
+		'id' => 7,
+		'name' => 'John Wick',
+		'email' => 'john@wick.com',
+		'age' => 24
+	],
 ];
