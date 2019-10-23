@@ -48,13 +48,34 @@ function datatable_search_by_name($item){
 
 function datatable_display_table(){
 	include_once "dataset.php";
-	$table = new Persons_Table();
-	// print_r($data);
+	$orderby = $_REQUEST['orderby'] ?? '';
+	$order = $_REQUEST['order'] ?? '';
 	if (isset($_REQUEST['s'])) {
 		$data = array_filter($data, 'datatable_search_by_name');
 
 	}
-
+	$table = new Persons_Table();
+	if ('age' == $orderby) {
+		if ('asc' == $order) {
+			usort($data,function($item1,$item2){
+				return $item2['age'] <=> $item1['age'];
+			});
+		}else{
+			usort($data,function($item1,$item2){
+				return $item1['age'] <=> $item2['age'];
+			});
+		}
+	}else if ('name' == $orderby) {
+		if ('asc' == $order) {
+			usort($data,function($item1,$item2){
+				return $item2['name'] <=> $item1['name'];
+			});
+		}else{
+			usort($data,function($item1,$item2){
+				return $item1['name'] <=> $item2['name'];
+			});
+		}
+	}
 
 	$table->set_data($data);
 	$table->prepare_items();

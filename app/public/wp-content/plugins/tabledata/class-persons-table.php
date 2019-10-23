@@ -21,6 +21,13 @@ class Persons_Table extends WP_List_Table{
 		];
 	}
 
+	function get_sortable_columns(){
+		return [
+			'age' => ['age' , true],
+			'name' => ['name' , true],
+		];
+	}
+
 	function column_cb($item){
 		return "<input type='checkbox' value='{$item['id']}'/>";
 	}
@@ -34,7 +41,7 @@ class Persons_Table extends WP_List_Table{
 	}
 
 	function prepare_items(){
-		$this->_column_headers= array($this->get_columns());
+		$this->_column_headers= array($this->get_columns(),array(),$this->get_sortable_columns());
 
 	}
 
