@@ -169,3 +169,7 @@
 [22-Oct-2019 20:46:33] NOTICE: exiting, bye-bye!
 [23-Oct-2019 04:07:30] NOTICE: fpm is running, pid 99
 [23-Oct-2019 04:07:30] NOTICE: ready to handle connections
+[23-Oct-2019 18:48:11] NOTICE: Terminating ...
+[23-Oct-2019 18:48:11] NOTICE: exiting, bye-bye!
+[24-Oct-2019 04:52:13] NOTICE: fpm is running, pid 125
+[24-Oct-2019 04:52:13] NOTICE: ready to handle connections

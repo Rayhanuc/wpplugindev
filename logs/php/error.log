@@ -1173,3 +1173,6 @@ Stack trace:
 [23-Oct-2019 16:13:38 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
 [23-Oct-2019 18:02:28 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 30
 [23-Oct-2019 18:07:24 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 30
+[24-Oct-2019 05:46:52 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 15
+[24-Oct-2019 14:06:06 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 47
+[24-Oct-2019 14:06:06 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 47
