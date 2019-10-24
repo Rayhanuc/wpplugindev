@@ -1176,3 +1176,24 @@ Stack trace:
 [24-Oct-2019 05:46:52 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 15
 [24-Oct-2019 14:06:06 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 47
 [24-Oct-2019 14:06:06 UTC] PHP Parse error:  syntax error, unexpected ',' in /app/public/wp-content/plugins/tabledata/class-persons-table.php on line 47
+[24-Oct-2019 15:52:30 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:52:30 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:52:30 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:52:30 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:52:30 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:52:30 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:52:30 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:53:12 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:53:12 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:53:12 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:53:12 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:53:12 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:53:12 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:53:12 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:56:05 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:56:05 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:56:05 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:56:05 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:56:05 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:56:05 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42
+[24-Oct-2019 15:56:05 UTC] PHP Warning:  strpos(): Empty needle in /app/public/wp-content/plugins/tabledata/tabledata.php on line 42

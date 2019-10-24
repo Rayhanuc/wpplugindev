@@ -46,12 +46,30 @@ function datatable_search_by_name($item){
 	return false;
 }
 
+function datatable_filter_sex($item){
+	$sex = $_REQUEST['filter_s']??'all';
+	if ('all' == $sex) {
+		return true;
+	}else{
+		if ($sex==$item['sex']) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+
 function datatable_display_table(){
 	include_once "dataset.php";
 	$orderby = $_REQUEST['orderby'] ?? '';
 	$order = $_REQUEST['order'] ?? '';
-	if (isset($_REQUEST['s'])) {
+	if (isset($_REQUEST['s']) && !empty($_REQUEST['s'])) {
 		$data = array_filter($data, 'datatable_search_by_name');
+
+	}
+	if (isset($_REQUEST['filter_s']) && !empty($_REQUEST['filter_s'])) {
+		$data = array_filter($data, 'datatable_filter_sex');
 
 	}
 	$table = new Persons_Table();
