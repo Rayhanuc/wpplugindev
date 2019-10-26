@@ -17,7 +17,7 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers","piklist_demos"),
 (15,1,"show_welcome_panel","1"),
-(17,1,"wp_dashboard_quick_press_last_post_id","175"),
+(17,1,"wp_dashboard_quick_press_last_post_id","194"),
 (18,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (19,1,"wp_user-settings","libraryContent=browse&editor=tinymce&widgets_access=off"),
 (20,1,"wp_user-settings-time","1569838639"),
@@ -38,7 +38,7 @@ INSERT INTO `wp_usermeta` VALUES
 (35,2,"wp_capabilities","a:1:{s:10:\"subscriber\";b:1;}"),
 (36,2,"wp_user_level","0"),
 (37,2,"dismissed_wp_pointers",""),
-(38,1,"session_tokens","a:2:{s:64:\"f67c11a931098d4cd8cf133dc7654d76c470d0acbc864da0fdc2af953aff7229\";a:4:{s:10:\"expiration\";i:1571933412;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3936.0 Safari/537.36 Edg/79.0.301.2\";s:5:\"login\";i:1571760612;}s:64:\"4b7ae3d8a1231f1d87128d7739d4e30ac595117f976610f435ad93021ee7c5ba\";a:4:{s:10:\"expiration\";i:1571976741;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3936.0 Safari/537.36 Edg/79.0.301.2\";s:5:\"login\";i:1571803941;}}"),
+(38,1,"session_tokens","a:2:{s:64:\"b2a4974c85471904a3bad3679353e43b75fbc1f8365b56fbb007f5659b532762\";a:4:{s:10:\"expiration\";i:1572197040;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:128:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3943.0 Safari/537.36 Edg/79.0.308.1\";s:5:\"login\";i:1572024240;}s:64:\"19b5250b9c3cc325bf38e8d5aafbf573cfb18ead424066c949096792049b8be8\";a:4:{s:10:\"expiration\";i:1572245082;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:78:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0\";s:5:\"login\";i:1572072282;}}"),
 (40,2,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (41,2,"closedpostboxes_dashboard","a:1:{i:0;s:19:\"demodashboardwidget\";}"),
 (42,2,"metaboxhidden_dashboard","a:0:{}");
