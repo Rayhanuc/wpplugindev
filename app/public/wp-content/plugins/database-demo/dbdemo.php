@@ -17,7 +17,7 @@
 
 
 
-define("DBDEMO_DB_VERSION",time());
+define("DBDEMO_DB_VERSION","1.0");
 
 function dbdemo_load_textdomain(){
 	load_plugin_textdomain('database-demo', false, plugin_dir_path(__FILE__)."/languages");
@@ -42,6 +42,4 @@ function dbdemo_init(){
 }
 
 register_activation_hook( __FILE__, "dbdemo_init" );
-
-
 
