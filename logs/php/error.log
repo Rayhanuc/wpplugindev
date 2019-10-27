@@ -1205,3 +1205,55 @@ Stack trace:
 [27-Oct-2019 02:07:27 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
 [27-Oct-2019 02:07:31 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
 [27-Oct-2019 02:07:33 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[27-Oct-2019 08:57:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method wpdb::inset() in /app/public/wp-content/plugins/database-demo/dbdemo.php:74
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): dbdemo_load_data(false)
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/includes/plugin.php(672): do_action('activate_databa...', false)
+#4 /app/public/wp-admin/plugins.php(44): activate_plugin('database-demo/d...', 'http://wpplugin...', false)
+#5 {main}
+  thrown in /app/public/wp-content/plugins/database-demo/dbdemo.php on line 74
+[27-Oct-2019 08:57:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method wpdb::inset() in /app/public/wp-content/plugins/database-demo/dbdemo.php:74
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): dbdemo_load_data('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/plugins.php(177): do_action('activate_databa...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/database-demo/dbdemo.php on line 74
+[27-Oct-2019 08:57:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method wpdb::inset() in /app/public/wp-content/plugins/database-demo/dbdemo.php:74
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): dbdemo_load_data('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/plugins.php(177): do_action('activate_databa...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/database-demo/dbdemo.php on line 74
+[27-Oct-2019 08:59:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method wpdb::inset() in /app/public/wp-content/plugins/database-demo/dbdemo.php:74
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): dbdemo_load_data(false)
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/includes/plugin.php(672): do_action('activate_databa...', false)
+#4 /app/public/wp-admin/plugins.php(44): activate_plugin('database-demo/d...', 'http://wpplugin...', false)
+#5 {main}
+  thrown in /app/public/wp-content/plugins/database-demo/dbdemo.php on line 74
+[27-Oct-2019 08:59:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method wpdb::inset() in /app/public/wp-content/plugins/database-demo/dbdemo.php:74
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): dbdemo_load_data('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/plugins.php(177): do_action('activate_databa...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/database-demo/dbdemo.php on line 74
+[27-Oct-2019 08:59:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method wpdb::inset() in /app/public/wp-content/plugins/database-demo/dbdemo.php:74
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): dbdemo_load_data('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/plugins.php(177): do_action('activate_databa...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/database-demo/dbdemo.php on line 74
+[27-Oct-2019 09:15:48 UTC] WordPress database error Table 'local.TABLEwp_persons' doesn't exist for query TRUNCATE TABLEwp_persons made by deactivate_plugins, do_action('deactivate_database-demo/dbdemo.php'), WP_Hook->do_action, WP_Hook->apply_filters, dbdemo_flush_data
+[27-Oct-2019 09:18:10 UTC] WordPress database error Table 'local.TABLEwp_persons' doesn't exist for query TRUNCATE TABLEwp_persons made by deactivate_plugins, do_action('deactivate_database-demo/dbdemo.php'), WP_Hook->do_action, WP_Hook->apply_filters, dbdemo_flush_data
