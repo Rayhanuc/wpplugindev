@@ -86,7 +86,32 @@ register_activation_hook( __FILE__, "dbdemo_load_data" );
 function dbdemo_flush_data(){
 	global $wpdb;
 	$table_name = $wpdb->prefix.'persons';
-	$query = "TRUNCATE TABLE{$table_name }";
+	$query = "TRUNCATE TABLE {$table_name}";
 	$wpdb->query($query);
 }
 register_deactivation_hook( __FILE__, 'dbdemo_flush_data');
+
+
+add_action('admin_menu', function(){
+	add_menu_page( 
+		__('DB Demmo', 'database-demo'),
+		__('DB Demo', 'database-demo'),
+		'manage_options',
+		'dbdemo',
+		'dbdemo_admin_page'
+	);
+});
+
+function dbdemo_admin_page(){
+	global $wpdb;
+	echo "<h2>DB Demo</h2>";
+	$id = $_GET['pid'] ?? 0;
+	$id = sanitize_key( $id );
+	if ($id) {
+		$result = $wpdb->get_row("select * from {$wpdb->prefix}persons WHERE id='{$id}'");
+		if ($result) {
+			echo "Name: {$result->name}<br/>";
+			echo "Email: {$result->email}<br/>";
+		}
+	}
+}
