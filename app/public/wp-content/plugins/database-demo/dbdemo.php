@@ -115,16 +115,20 @@ function dbdemo_admin_page(){
 		}
 	}
 	?>
-	<form action="" method="POST">
+	<div class="notice notice-success is-dismissible">
+		<p>Some Error Information</p>
+	</div>
+	<form action="<?php echo admin_url( 'admin-post.php' ) ?>" method="POST">
 		<?php 
 		wp_nonce_field('dbdemo','nonce');
 		 ?>
+		<input type="hidden" name="action" value="dbdemo_add_record">
 		Name: <input type="text" name="name"><br>
 		Email: <input type="text" name="email">
 		<?php submit_button("Add Record") ; ?>
 	</form>
 	<?php
-	if (isset($_POST['submit'])) {
+	/*if (isset($_POST['submit'])) {
 		$nonce = sanitize_text_field( $_POST['nonce'] );
 		if (wp_verify_nonce( $nonce, 'dbdemo1' )) {
 			$name = sanitize_text_field( $_POST['name'] );
@@ -134,5 +138,18 @@ function dbdemo_admin_page(){
 		}else {
 			echo "You'r not to allowed to do this";
 		}
-	}
+	}*/
 }
+
+add_action('admin_post_dbdemo_add_record', function(){
+	global $wpdb;
+	$nonce = sanitize_text_field( $_POST['nonce'] );
+	if (wp_verify_nonce( $nonce, 'dbdemo' )) {
+		$name = sanitize_text_field( $_POST['name'] );
+		$email = sanitize_text_field( $_POST['email'] );
+
+		$wpdb->insert("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email]);
+	}
+
+	wp_redirect( admin_url('admin.php?page=dbdemo'));
+});
