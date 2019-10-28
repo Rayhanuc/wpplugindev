@@ -109,23 +109,30 @@ function dbdemo_admin_page(){
 	$id = sanitize_key( $id );
 	if ($id) {
 		$result = $wpdb->get_row("select * from {$wpdb->prefix}persons WHERE id='{$id}'");
-		if ($result) {
+		/*if ($result) {
 			echo "Name: {$result->name}<br/>";
 			echo "Email: {$result->email}<br/>";
-		}
+		}*/
 	}
 	?>
-	<div class="notice notice-success is-dismissible">
+	<!-- <div class="notice notice-success is-dismissible">
 		<p>Some Error Information</p>
-	</div>
+	</div> -->
 	<form action="<?php echo admin_url( 'admin-post.php' ) ?>" method="POST">
 		<?php 
 		wp_nonce_field('dbdemo','nonce');
 		 ?>
 		<input type="hidden" name="action" value="dbdemo_add_record">
-		Name: <input type="text" name="name"><br>
-		Email: <input type="text" name="email">
-		<?php submit_button("Add Record") ; ?>
+		Name: <input type="text" name="name" value="<?php if($id) echo $result->name; ?>"><br>
+		Email: <input type="text" name="email" value="<?php if($id) echo $result->email; ?>">		
+		<?php
+			if ($id) {
+				echo '<input type="hidden" name="id" value="'.esc_attr($id).'">';
+				submit_button("Update Record") ; 
+			}else{
+				submit_button("Add Record") ; 
+			}
+		?>
 	</form>
 	<?php
 	/*if (isset($_POST['submit'])) {
@@ -147,9 +154,18 @@ add_action('admin_post_dbdemo_add_record', function(){
 	if (wp_verify_nonce( $nonce, 'dbdemo' )) {
 		$name = sanitize_text_field( $_POST['name'] );
 		$email = sanitize_text_field( $_POST['email'] );
+		$id = sanitize_text_field( $_POST['id'] );
+		if ($id) {
+			$wpdb->update("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email],['id'=>$id]);
+			wp_redirect( admin_url('admin.php?page=dbdemo&pid='.$id));
+		}else{
+			/*$wpdb->insert("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email]);
+			$new_id = $wpdb->insert_id;
+			wp_redirect( admin_url('admin.php?page=dbdemo&pid='.$new_id));*/
+			wp_redirect( admin_url('admin.php?page=dbdemo'));
+		}
 
-		$wpdb->insert("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email]);
 	}
 
-	wp_redirect( admin_url('admin.php?page=dbdemo'));
+	
 });
