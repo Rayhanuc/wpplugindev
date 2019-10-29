@@ -67,6 +67,11 @@ function dbdemo_drop_column(){
 }
 add_action("plugins_loaded","dbdemo_drop_column");
 
+add_action('admin_enqueue_scripts', function ($hook){
+	if ("toplevel_page_dbdemo" == $hook) {
+		wp_enqueue_style('dbdemo-style',plugin_dir_url(__FILE__).'assets/css/form.css',time());
+	}
+});
 
 function dbdemo_load_data(){
 	global $wpdb;
@@ -118,22 +123,36 @@ function dbdemo_admin_page(){
 	<!-- <div class="notice notice-success is-dismissible">
 		<p>Some Error Information</p>
 	</div> -->
-	<form action="<?php echo admin_url( 'admin-post.php' ) ?>" method="POST">
-		<?php 
-		wp_nonce_field('dbdemo','nonce');
-		 ?>
-		<input type="hidden" name="action" value="dbdemo_add_record">
-		Name: <input type="text" name="name" value="<?php if($id) echo $result->name; ?>"><br>
-		Email: <input type="text" name="email" value="<?php if($id) echo $result->email; ?>">		
-		<?php
-			if ($id) {
-				echo '<input type="hidden" name="id" value="'.esc_attr($id).'">';
-				submit_button("Update Record") ; 
-			}else{
-				submit_button("Add Record") ; 
-			}
-		?>
-	</form>
+	<div class="form_box">
+		<div class="form_box_header">
+			<?php _e('Data Form','database-demo'); ?>
+		</div>
+		<div class="form_box_content">
+			<form action="<?php echo admin_url( 'admin-post.php' ) ?>" method="POST">
+				<?php 
+				wp_nonce_field('dbdemo','nonce');
+				 ?>
+				<input type="hidden" name="action" value="dbdemo_add_record">
+				<label>
+					<strong>Name</strong>
+				</label><br>
+				<input type="text" name="name" value="<?php if($id) {echo $result->name;} ?>"><br>
+				<label>
+					<strong>Email</strong>
+				</label><br>
+				<input type="text" name="email" value="<?php if($id) {echo $result->email;} ?>">		
+				<?php
+					if ($id) {
+						echo '<input type="hidden" name="id" value="'.$id.'">';
+						submit_button("Update Record") ; 
+					}else{
+						submit_button("Add Record") ; 
+					}
+				?>
+			</form>
+		</div>
+	</div>
+	
 	<?php
 	/*if (isset($_POST['submit'])) {
 		$nonce = sanitize_text_field( $_POST['nonce'] );
@@ -159,10 +178,11 @@ add_action('admin_post_dbdemo_add_record', function(){
 			$wpdb->update("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email],['id'=>$id]);
 			wp_redirect( admin_url('admin.php?page=dbdemo&pid='.$id));
 		}else{
-			/*$wpdb->insert("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email]);
-			$new_id = $wpdb->insert_id;
+			$wpdb->insert("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email]);
+			/*$new_id = $wpdb->insert_id;
 			wp_redirect( admin_url('admin.php?page=dbdemo&pid='.$new_id));*/
 			wp_redirect( admin_url('admin.php?page=dbdemo'));
+
 		}
 
 	}
