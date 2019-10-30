@@ -25,7 +25,7 @@ class DBTableUsers extends WP_List_Table {
 	}
 
 	function column_action($item){
-		$link = admin_url('?page=dbdemo&pid='.$item['id']);
+		$link = wp_nonce_url(admin_url('?page=dbdemo&pid='.$item['id']),"dbdemo_edit",'n');
 		return "<a href='".esc_url($link)."'>Edit</a>";
 	}
 

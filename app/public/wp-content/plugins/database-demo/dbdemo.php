@@ -100,7 +100,7 @@ register_deactivation_hook( __FILE__, 'dbdemo_flush_data');
 
 add_action('admin_menu', function(){
 	add_menu_page( 
-		__('DB Demmo', 'database-demo'),
+		__('DB Demo', 'database-demo'),
 		__('DB Demo', 'database-demo'),
 		'manage_options',
 		'dbdemo',
@@ -109,6 +109,11 @@ add_action('admin_menu', function(){
 });
 
 function dbdemo_admin_page(){
+	if(isset($_GET['pid'])){
+		if (!isset($_GET['n']) || !wp_verify_nonce($_GET['n'], "dbdemo_edit")) {
+			wp_die(__("Sorry you are not authorized to do this","database-demo"));
+		}
+	}
 	global $wpdb;
 	echo "<h2>DB Demo</h2>";
 	$id = $_GET['pid'] ?? 0;
@@ -183,7 +188,8 @@ add_action('admin_post_dbdemo_add_record', function(){
 		$id = sanitize_text_field( $_POST['id'] );
 		if ($id) {
 			$wpdb->update("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email],['id'=>$id]);
-			wp_redirect( admin_url('admin.php?page=dbdemo&pid='.$id));
+			$nonce = wp_create_nonce( "dbdemo_edit" );
+			wp_redirect( admin_url('admin.php?page=dbdemo&pid='.$id).$id."&n={$nonce}");
 		}else{
 			$wpdb->insert("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email]);
 			/*$new_id = $wpdb->insert_id;
