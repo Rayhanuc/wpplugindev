@@ -1278,3 +1278,22 @@ Stack trace:
 [29-Oct-2019 10:50:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /app/public/wp-content/plugins/database-demo/dbdemo.php on line 185
 [29-Oct-2019 10:50:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /app/public/wp-content/plugins/database-demo/dbdemo.php on line 185
 [29-Oct-2019 10:50:02 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /app/public/wp-content/plugins/database-demo/dbdemo.php on line 185
+[29-Oct-2019 14:33:32 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /app/public/wp-content/plugins/database-demo/class.dbdemousers.php on line 20
+[29-Oct-2019 14:34:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function class_exits() in /app/public/wp-content/plugins/database-demo/class.dbdemousers.php:4
+Stack trace:
+#0 /app/public/wp-content/plugins/database-demo/dbdemo.php(21): require_once()
+#1 /app/public/wp-settings.php(362): include_once('/app/public/wp-...')
+#2 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-admin/admin.php(34): require_once('/app/public/wp-...')
+#5 {main}
+  thrown in /app/public/wp-content/plugins/database-demo/class.dbdemousers.php on line 4
+[29-Oct-2019 14:34:47 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[29-Oct-2019 14:34:49 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[29-Oct-2019 14:34:50 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[30-Oct-2019 07:32:41 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[30-Oct-2019 07:32:43 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[30-Oct-2019 07:32:43 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 569
+[30-Oct-2019 07:40:44 UTC] PHP Parse error:  syntax error, unexpected '{' in /app/public/wp-content/plugins/database-demo/class.dbdemousers.php on line 28
+[30-Oct-2019 07:40:44 UTC] PHP Parse error:  syntax error, unexpected '{' in /app/public/wp-content/plugins/database-demo/class.dbdemousers.php on line 28
+[30-Oct-2019 07:41:09 UTC] PHP Parse error:  syntax error, unexpected '{' in /app/public/wp-content/plugins/database-demo/class.dbdemousers.php on line 28

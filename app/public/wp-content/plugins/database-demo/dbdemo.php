@@ -18,6 +18,7 @@
 
 
 define("DBDEMO_DB_VERSION","1.3");
+require_once "class.dbdemousers.php";
 
 function dbdemo_load_textdomain(){
 	load_plugin_textdomain('database-demo', false, plugin_dir_path(__FILE__)."/languages");
@@ -152,19 +153,25 @@ function dbdemo_admin_page(){
 			</form>
 		</div>
 	</div>
+
+	<div class="form_box" style="margin-top: 30px;">
+		<div class="form_box_header">
+			<?php _e('Users Data','database-demo'); ?>
+		</div>
+		<div class="form_box_content">
+			<?php
+				global $wpdb;
+				$dbdemo_users = $wpdb->get_results("SELECT id, name, email FROM {$wpdb->prefix}persons ORDER BY id DESC",ARRAY_A);
+				$dbtu = new DBTableUsers($dbdemo_users);
+				$dbtu->parepare_items();
+				$dbtu->display();
+			?>
+		</div>
+	</div>
+
 	
 	<?php
-	/*if (isset($_POST['submit'])) {
-		$nonce = sanitize_text_field( $_POST['nonce'] );
-		if (wp_verify_nonce( $nonce, 'dbdemo1' )) {
-			$name = sanitize_text_field( $_POST['name'] );
-			$email = sanitize_text_field( $_POST['email'] );
-
-			$wpdb->insert("{$wpdb->prefix}persons",['name'=>$name, 'email'=>$email]);
-		}else {
-			echo "You'r not to allowed to do this";
-		}
-	}*/
+	
 }
 
 add_action('admin_post_dbdemo_add_record', function(){
