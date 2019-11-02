@@ -109,12 +109,19 @@ add_action('admin_menu', function(){
 });
 
 function dbdemo_admin_page(){
+	global $wpdb;
 	if(isset($_GET['pid'])){
 		if (!isset($_GET['n']) || !wp_verify_nonce($_GET['n'], "dbdemo_edit")) {
 			wp_die(__("Sorry you are not authorized to do this","database-demo"));
 		}
+
+		if (isset($_GET['action']) && $_GET['action'] == 'delete') {
+			$wpdb->delete("{$wpdb->prefix}persons",['id'=>sanitize_key($_GET['pid'])]);
+			$_GET['pid'] = null;
+		}
 	}
-	global $wpdb;
+
+	
 	echo "<h2>DB Demo</h2>";
 	$id = $_GET['pid'] ?? 0;
 	$id = sanitize_key( $id );

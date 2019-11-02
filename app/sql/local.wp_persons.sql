@@ -10,4 +10,7 @@ INSERT INTO `wp_persons` VALUES
 (6,"Hero Kamal","hero@kamal.com"),
 (7,"Jamal Korashi","jamal@korashi.com"),
 (8,"Brown Fox","quick@brownfox.com"),
-(9,"David Smith Junior","david.jr@smith.com");
+(9,"David Smith Junior","david.jr@smith.com"),
+(10,"Anonymous Two","anon@usb.com"),
+(11,"Hello World some","hello@dolly.com"),
+(12,"Hello World 2","hello@world2.com");
