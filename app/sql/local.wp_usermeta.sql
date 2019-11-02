@@ -17,7 +17,7 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers","piklist_demos"),
 (15,1,"show_welcome_panel","1"),
-(17,1,"wp_dashboard_quick_press_last_post_id","194"),
+(17,1,"wp_dashboard_quick_press_last_post_id","195"),
 (18,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (19,1,"wp_user-settings","libraryContent=browse&editor=tinymce&widgets_access=off"),
 (20,1,"wp_user-settings-time","1569838639"),
@@ -38,7 +38,7 @@ INSERT INTO `wp_usermeta` VALUES
 (35,2,"wp_capabilities","a:1:{s:10:\"subscriber\";b:1;}"),
 (36,2,"wp_user_level","0"),
 (37,2,"dismissed_wp_pointers",""),
-(38,1,"session_tokens","a:3:{s:64:\"316192f1de3c191d9905e9582d2825a14f1cee6bd2eba46653152d6b8116f838\";a:4:{s:10:\"expiration\";i:1572450589;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36\";s:5:\"login\";i:1572277789;}s:64:\"267c74ea1a9149610e4510fd1d7c6c71c0d20e3d017476004af90d5c9c3da9d7\";a:4:{s:10:\"expiration\";i:1572450597;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36\";s:5:\"login\";i:1572277797;}s:64:\"1fa756aa9c25b4613585d35a57b4c0f9ad86833a9b8bb19990f48d3b444924df\";a:4:{s:10:\"expiration\";i:1572618748;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36\";s:5:\"login\";i:1572445948;}}"),
+(38,1,"session_tokens","a:2:{s:64:\"add7767defac136b7da8319a6264eb23a8721c4e3462e93415b6d4748f899c70\";a:4:{s:10:\"expiration\";i:1572827913;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36\";s:5:\"login\";i:1572655113;}s:64:\"baebf3a8e7a8c6d8f564506c0f99042f03ab2d6461efec41ab201a98c719e8c8\";a:4:{s:10:\"expiration\";i:1572827920;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36\";s:5:\"login\";i:1572655120;}}"),
 (40,2,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (41,2,"closedpostboxes_dashboard","a:1:{i:0;s:19:\"demodashboardwidget\";}"),
 (42,2,"metaboxhidden_dashboard","a:0:{}");
