@@ -6,9 +6,12 @@ if (!class_exists("WP_List_Table")) {
 }
 
 class DBTableUsers extends WP_List_Table {
+
+	private $_items;
+
 	function __construct($data){
 		parent::__construct();
-		$this->items = $data;
+		$this->_items = $data;
 	}
 
 	function get_columns(){
@@ -45,6 +48,19 @@ class DBTableUsers extends WP_List_Table {
 	}
 
 	function parepare_items(){
+
+		$per_page = 2;
+		$current_page = $this->get_pagenum();
+		$total_items = count($this->_items);
+		$this->set_pagination_args([
+			'total_items' => $total_items,
+			'per_page' => $per_page
+		]);
+		$data = array_slice($this->_items,($current_page-1)*$per_page,$per_page);
+		$this->items = $data;
+
+
 		$this->_column_headers = array($this->get_columns(),[],[]);
+
 	}
 }
