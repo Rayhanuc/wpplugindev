@@ -31,9 +31,20 @@ function noticeninja_admin_notice(){
 	<div class="notice notice-warning is-dismissible">
 		<p>Hey, here is some information for you 3</p>
 	</div>
-	<div class="notice notice-success is-dismissible">
+	<div id="noticeninja" class="notice notice-success is-dismissible">
 		<p>Hey, here is some information for you 1</p>
 	</div>
 	<?php
 }
 add_action('admin_notices','noticeninja_admin_notice');
+
+
+
+add_action('admin_enqueue_scripts', function(){
+	wp_enqueue_script('noticeninja-js',plugin_dir_url( __FILE__ )."assets/js/script.js",array('jquery'),time(),true);
+});
+
+/*function noticeninja_assets(){
+	wp_enqueue_script('noticeninja-js',plugin_dir_url( __FILE__ )."/assets/js/script.js",array('jquery'),time(),true);
+}
+add_action( "admin_enqueue_scripts", "noticeninja_assets" );*/
