@@ -31,10 +31,12 @@ function noticeninja_admin_notice(){
 	<div class="notice notice-warning is-dismissible">
 		<p>Hey, here is some information for you 3</p>
 	</div>
-	<div id="noticeninja" class="notice notice-success is-dismissible">
-		<p>Hey, here is some information for you 1</p>
-	</div>
+	<?php if(!(isset($_COOKIE['nn-close']) && $_COOKIE['nn-close'] == 1)) :?>
+		<div id="noticeninja" class="notice notice-success is-dismissible">
+			<p>Hey, here is some information for you 1</p>
+		</div>
 	<?php
+	endif;
 }
 add_action('admin_notices','noticeninja_admin_notice');
 
