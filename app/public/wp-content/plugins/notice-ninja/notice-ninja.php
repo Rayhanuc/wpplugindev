@@ -50,7 +50,7 @@ function noticeninja_admin_notice(){
 			<?php if(!(isset($_COOKIE['nn-close']) && $_COOKIE['nn-close'] == 1)) :?>
 				<div id="noticeninja" class="notice notice-success notice-custom is-dismissible">
 					<?php echo $remote_body; ?>
-					<img src="https://images.unsplash.com/photo-1572851898842-734b6e5c4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" height="700" width="800">
+					<img src="https://images.unsplash.com/photo-1572851898842-734b6e5c4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" >
 				</div>
 			<?php
 			endif;
@@ -63,3 +63,7 @@ add_action('admin_enqueue_scripts', function(){
 	wp_enqueue_script('noticeninja-js',plugin_dir_url( __FILE__ )."assets/js/script.js",array('jquery'),time(),true);
 	wp_enqueue_style('noticeninja-css',plugin_dir_url( __FILE__ )."assets/css/custom.css",null,time());
 });
+
+
+
+
