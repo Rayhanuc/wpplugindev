@@ -1336,3 +1336,14 @@ Stack trace:
 [03-Nov-2019 07:05:03 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/plugins/notice-ninja/notice-ninja.php on line 44
 [03-Nov-2019 07:05:03 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/plugins/notice-ninja/notice-ninja.php on line 44
 [03-Nov-2019 07:05:18 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/plugins/notice-ninja/notice-ninja.php on line 44
+[04-Nov-2019 12:12:17 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 160
+[04-Nov-2019 12:12:20 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /app/public/wp-includes/update.php on line 384
+[04-Nov-2019 14:43:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function trin() in /app/public/wp-content/plugins/notice-ninja/notice-ninja.php:33
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): noticeninja_admin_notice('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /app/public/wp-admin/admin-header.php(281): do_action('admin_notices')
+#4 /app/public/wp-admin/plugins.php(479): require_once('/app/public/wp-...')
+#5 {main}
+  thrown in /app/public/wp-content/plugins/notice-ninja/notice-ninja.php on line 33

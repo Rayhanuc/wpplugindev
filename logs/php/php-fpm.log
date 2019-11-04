@@ -220,3 +220,7 @@
 [02-Nov-2019 16:09:28] NOTICE: exiting, bye-bye!
 [03-Nov-2019 00:18:40] NOTICE: fpm is running, pid 146
 [03-Nov-2019 00:18:40] NOTICE: ready to handle connections
+[03-Nov-2019 12:50:11] NOTICE: Terminating ...
+[03-Nov-2019 12:50:11] NOTICE: exiting, bye-bye!
+[04-Nov-2019 12:07:51] NOTICE: fpm is running, pid 101
+[04-Nov-2019 12:07:51] NOTICE: ready to handle connections
