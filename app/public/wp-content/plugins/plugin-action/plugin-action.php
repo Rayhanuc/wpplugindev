@@ -43,3 +43,11 @@ add_filter('plugin_action_links_'.plugin_basename(__FILE__),function($links){
 	// array_unshift($links,$link); // before position
 	return $links;
 });
+
+add_filter('plugin_row_meta', function ($links, $plugin){
+	if (plugin_basename(__FILE__)==$plugin) {
+	$link = sprintf("<a href='%s' style='color:#a00'>%s</a>",esc_url('https://github.com/Rayhanuc/'),__('Fork on GitHub','plac'));
+	array_push($links, $link);
+	}
+	return $links;
+},10,2);
