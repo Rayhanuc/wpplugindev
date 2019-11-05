@@ -11,7 +11,7 @@
 * Author URI:  http://
 * License:     GPLv2 or later
 * License URI: http://
-* Text Domain: placlinkdemo
+* Text Domain: plac
 * Domain Path: /languages/
 */
 
@@ -35,4 +35,11 @@ add_action('activated_plugin', function($plugin){
 		wp_redirect(admin_url( 'admin.php?page=action_links' ));
 		die(); 
 	}
+});
+
+add_filter('plugin_action_links_'.plugin_basename(__FILE__),function($links){
+	$link = sprintf("<a href='%s' style='color:#a00'>%s</a>",admin_url('admin.php?page=action_links'),__('Settings','plac'));
+	array_push($links,$link); // after position
+	// array_unshift($links,$link); // before position
+	return $links;
 });
